@@ -23,16 +23,3 @@ class RideSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ride
         fields = "__all__"
-    #     fields = [
-    #     "id_ride",
-    #     "status",
-    #     "pickup_latitude",
-    #     "pickup_longitude",
-    #     "dropoff_latitude",
-    #     "dropoff_longitude",
-    #     "pickup_time",
-    #     "rider",
-    #     "driver",
-    #     "todays_ride_events",
-    #     "distance",  # annotated field
-    # ]
