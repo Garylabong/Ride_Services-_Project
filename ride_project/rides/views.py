@@ -17,7 +17,7 @@ from .reports import get_trip_duration_report
 
 class RideViewSet(ModelViewSet):
 
-    queryset = Ride.objects.all()     
+    queryset = Ride.objects.all()     #ride
     serializer_class = RideSerializer
     permission_classes = [IsAdminRole]
 
@@ -35,7 +35,7 @@ class RideViewSet(ModelViewSet):
 
         last_24_hours = timezone.now() - timedelta(hours=24)
 
-        events_qs = RideEvent.objects.filter(
+        events_qs = RideEvent.objects.filter( #ride events
             created_at__gte=last_24_hours
         )
 
